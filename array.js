@@ -1,11 +1,11 @@
 // Exercise 1
-const extractKeysArray = [
+const facilitators = [
     {name: "Elie", isInstructor:true},
     {name: "Tim", isInstructor:true},
     {name: "Matt", isInstructor:true}
 ];
 
-function extractKey (extractKeysArray) {
+function extractKey (arrayObject, name) {
     for (let key of extractKeysArray) {
         console.log(key);
     }
