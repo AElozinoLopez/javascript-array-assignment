@@ -5,7 +5,7 @@ const facilitators = [
     {name: "Matt", isInstructor:true}
 ];
 
-function extractKey (arrayObject, name) {
+function extractKey (arrayobj, name) {
     for (let key of extractKeysArray) {
         console.log(key);
     }
