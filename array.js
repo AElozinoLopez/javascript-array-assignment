@@ -35,20 +35,20 @@ function extractKey(obj, user) {
 console.log(extractKey(instructors, "name"));
 
 // *******************************************************************************
-// const people = [
-//     { name: "Elie", isInstructor: true },
-//     { name: "Tim", isInstructor: true },
-//     { name: "Matt", isInstructor: true }
-// ];
+const people = [
+    { name: "Elie", isInstructor: true },
+    { name: "Tim", isInstructor: true },
+    { name: "Matt", isInstructor: true }
+];
 
-// // Using the map method
-// function extractKey(arrObject, name) {
-//     let result = arrObject.map((value) => {
-//         return value.name
-//     })
-//     return result;
-// }
+// Using the map method
+function extractKey(arrObject, name) {
+    let result = arrObject.map((value) => {
+        return value.name
+    })
+    return result;
+}
 
-// console.log(extractKey(people, 'name'))
+console.log(extractKey(people, 'name'))
 
 // ******************************************************************************
