@@ -1,13 +1,13 @@
 // Exercise 1
-const facilitators = [
-    {name: "Elie", isInstructor:true},
-    {name: "Tim", isInstructor:true},
-    {name: "Matt", isInstructor:true}
-];
+// const facilitators = [
+//     {name: "Elie", isInstructor:true},
+//     {name: "Tim", isInstructor:true},
+//     {name: "Matt", isInstructor:true}
+// ];
 
-const extractKey = facilitators.forEach(function(extractKey) {
-    console.log(extractKey);
-})
+// const extractKey = facilitators.forEach(function(extractKey) {
+//     console.log(extractKey);
+// })
 
 // function extractKey (arrayobj, name) {
 //     for (let key of extractKeysArray) {
@@ -16,7 +16,7 @@ const extractKey = facilitators.forEach(function(extractKey) {
 
 // }
 
-console.log(extractKey());
+// console.log(extractKey());
 
 // *****************************************************************************
 const instructors = [
@@ -32,22 +32,22 @@ function extractKey(obj, user) {
     });
     return newArr;
 } 
-// console.log(extractKey(instructors, "name"));
+console.log(extractKey(instructors, "name"));
 
 // *******************************************************************************
-const people = [
-    { name: "Elie", isInstructor: true },
-    { name: "Tim", isInstructor: true },
-    { name: "Matt", isInstructor: true }
-];
+// const people = [
+//     { name: "Elie", isInstructor: true },
+//     { name: "Tim", isInstructor: true },
+//     { name: "Matt", isInstructor: true }
+// ];
 
-// Using the map method
-function extractKey(arrObject, name) {
-    let result = arrObject.map((value) => {
-        return value.name
-    })
-    return result;
-}
+// // Using the map method
+// function extractKey(arrObject, name) {
+//     let result = arrObject.map((value) => {
+//         return value.name
+//     })
+//     return result;
+// }
 
 // console.log(extractKey(people, 'name'))
 
