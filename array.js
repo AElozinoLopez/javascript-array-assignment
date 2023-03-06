@@ -9,7 +9,7 @@ function extractKey(arrayOfObjects, name) {
     let instructors = arrayOfObjects.map(function(theInstructors){
         return theInstructors.name
     })
-
+    return instructors
 }
 
 console.log(extractKey(facilitators));
