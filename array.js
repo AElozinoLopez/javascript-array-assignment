@@ -14,21 +14,27 @@ function extractKey(arrayOfObjects, name) {
 
 console.log(extractKey(facilitators));
 
-// *******************************************************************************
-// const people = [
-//     { name: "Elie", isInstructor: true },
-//     { name: "Tim", isInstructor: true },
-//     { name: "Matt", isInstructor: true }
-// ];
 
-// // Using the map method
-// function extractKey(arrObject, name) {
-//     let result = arrObject.map((value) => {
-//         return value.name
-//     })
-//     return result;
+// EXERCISE 2
+
+ const letters =  ["a","a","b","c","A"]; 
+ 
+ function filterLetters(lettersArray) {
+    return lettersArray.filter ((value) {
+        value.toLowerCase()}
+    )
+
+ }
+
+
+//  **********************************************************************
+// const letters = ["a","a","b","c","A"]
+
+// function firstLetters(arr, query) {
+//     return arr.filter((al) => 
+//     al.toLowerCase().includes(query.toLowerCase()))
 // }
 
-// console.log(extractKey(people, 'name'))
+// console.log(firstLetters(letters, "a"));
 
-// // ******************************************************************************
+// **********************************************************************
