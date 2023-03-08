@@ -19,23 +19,10 @@ console.log(extractKey(facilitators));
 
 
 
-//  **********************************************************************
-const letters = ["a","a","b","c","A"];
-
-function firstLetters(arr, query) {
-    return arr.filter((al) => 
-    al.toLowerCase().includes(query.toLowerCase()))
-}
-
-console.log(firstLetters(letters, "a"));
-
-// **********************************************************************
-
-//
-function filterLetters(arrLetters, letter) {
+function filterLetters(lettersArray, determinantLetter) {
     let occurence = 0;
-    arrLetters.filter((arrLetter) => {
-        if (arrLetter.toUpperCase() == letter.toUpperCase()) {
+    lettersArray.filter(function(letterArray) {
+        if (letterArray.toUpperCase() === determinantLetter.toUpperCase()) {
             occurence++;
         }
     })
@@ -43,6 +30,4 @@ function filterLetters(arrLetters, letter) {
 }
 
 console.log(filterLetters(["a", "a", "b", "c", "A"], "a"));
-// console.log(filterLetters(["a", "a", "b", "c", "A"], "z"));
-// console.log(filterLetters(["a", "a", "b", "c", "A"], "B"));
-//
+
