@@ -17,24 +17,32 @@ console.log(extractKey(facilitators));
 
 // EXERCISE 2
 
- const letters =  ["a","a","b","c","A"]; 
- 
- function filterLetters(lettersArray) {
-    return lettersArray.filter ((value) {
-        value.toLowerCase()}
-    )
-
- }
 
 
 //  **********************************************************************
-// const letters = ["a","a","b","c","A"]
+const letters = ["a","a","b","c","A"];
 
-// function firstLetters(arr, query) {
-//     return arr.filter((al) => 
-//     al.toLowerCase().includes(query.toLowerCase()))
-// }
+function firstLetters(arr, query) {
+    return arr.filter((al) => 
+    al.toLowerCase().includes(query.toLowerCase()))
+}
 
-// console.log(firstLetters(letters, "a"));
+console.log(firstLetters(letters, "a"));
 
 // **********************************************************************
+
+//
+function filterLetters(arrLetters, letter) {
+    let occurence = 0;
+    arrLetters.filter((arrLetter) => {
+        if (arrLetter.toUpperCase() == letter.toUpperCase()) {
+            occurence++;
+        }
+    })
+    return occurence;
+}
+
+console.log(filterLetters(["a", "a", "b", "c", "A"], "a"));
+// console.log(filterLetters(["a", "a", "b", "c", "A"], "z"));
+// console.log(filterLetters(["a", "a", "b", "c", "A"], "B"));
+//
