@@ -51,3 +51,17 @@ function valTimesIndex (array) {
 
 console.log(valTimesIndex([5, 10, 15]));
 
+
+
+// EXERCISE 5
+function addKeyAndValue(objects, key, value) {
+        objects.forEach((array) => {
+        array[key] = value;
+    })
+    return objects;
+}
+
+console.log(addKeyAndValue([{name:'Joshua'},{name:'Mark'},{name:'Arthur'}],"isInstructor", true));
+
+
+
