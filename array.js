@@ -44,3 +44,12 @@ printFirstAndLast(wordsArray);
 
 
 
+// EXERCISE 4
+function valTimesIndex (array) {
+    return array.map((number, index) => {
+        return number * index;
+    }) 
+}
+
+console.log(valTimesIndex([5, 10, 15]));
+
