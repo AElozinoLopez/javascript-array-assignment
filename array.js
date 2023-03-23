@@ -17,8 +17,6 @@ console.log(extractKey(facilitators));
 
 // EXERCISE 2
 
-
-
 function filterLetters(lettersArray, determinantLetter) {
     let occurence = 0;
     lettersArray.filter(function(letterArray) {
@@ -30,4 +28,19 @@ function filterLetters(lettersArray, determinantLetter) {
 }
 
 console.log(filterLetters(["a", "a", "b", "c", "A"], "a"));
+
+
+// EXERCISE 3
+const wordsArray = ['awesome','example','of','forEach'];
+function printFirstAndLast (words){
+    let result = "";
+    words.forEach((value) => {
+        result = value[0] + value[value.length-1]
+        console.log(result);
+    })
+    
+}
+printFirstAndLast(wordsArray);
+
+
 
